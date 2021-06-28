@@ -61,11 +61,22 @@ table {
 
 html {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Padauk', sans-serif;
 }
 
-menu {
+.container {
+  max-width: 70rem;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+  @media only screen and (min-width: 70rem) {
+    .container {
+      padding: 0;
+    }
+  }
+
+.menu--center {
   display: block;
   position: relative;
   height: 100vh;
@@ -73,33 +84,63 @@ menu {
   margin: 0 1rem;
 }
   @media only screen and (min-width: 1120px) {
-    menu {
+    .menu--center {
       margin: 0 auto;
     }
   }
 
-menu li {
+.menu--top .menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu--center .menu__item {
   position: absolute;
   background-color: white;
   border: 1px solid black;
   padding: 1rem;
 }
 
-menu li a {
+.menu--center .menu__link {
   color: inherit;
   text-decoration: none;
 }
 
-menu li a::after {
+.menu--top .menu__link {
+  font-size: 0.875rem;
+}
+  @media only screen and (min-width: 768px) {
+    .menu--top .menu__link {
+      font-size: 1rem;
+    }
+  }
+
+.menu--top .menu__item:not(:first-child) .menu__link {
+  padding: 0.5rem 0.75rem;
+}
+  @media only screen and (min-width: 768px) {
+    .menu--top .menu__item:not(:first-child) .menu__link {
+      display: block;
+      padding: 0.5rem 3rem;
+    }
+  }
+
+.menu__link::after {
   content: ' —';
 }
 
-menu li:nth-child(1) {
+.menu--top .menu__item:first-child .menu__link::after,
+.menu--top .menu__item:last-child .menu__link::after 
+{
+  content: '';
+}
+
+.menu--center .menu__item:nth-child(1) {
   border-color: blue;
   color: blue;
 }
   @media only screen and (min-width: 375px) {
-    menu li:nth-child(1) {
+    .menu--center .menu__item:nth-child(1) {
       top: 5%;
       bottom: 20%; 
       right: 40%;
@@ -107,7 +148,7 @@ menu li:nth-child(1) {
     }
   }
   @media only screen and (min-width: 768px) {
-    menu li:nth-child(1) {
+    .menu--center .menu__item:nth-child(1) {
       top: 30%;
       bottom: 35%; 
       right: 45%;
@@ -115,12 +156,22 @@ menu li:nth-child(1) {
     }
   }
 
-menu li:nth-child(2) {
+.menu--top .menu__item:nth-child(1) .menu__link {
+  text-decoration: none;
+  color: blue;
+}
+
+.menu--top .menu__item:nth-child(2) .menu__link {
+  margin-left: auto;
+  border: 1px solid red;
+}
+
+.menu--center .menu__item:nth-child(2) {
   border-color: red;
   color: red;
 }
   @media only screen and (min-width: 375px) {
-    menu li:nth-child(2) {
+    .menu--center .menu__item:nth-child(2) {
       top: 20%;
       bottom: 10%;
       left: 10%;
@@ -128,7 +179,7 @@ menu li:nth-child(2) {
     }
   }
   @media only screen and (min-width: 768px) {
-    menu li:nth-child(2) {
+    .menu--center .menu__item:nth-child(2) {
       top: 20%;
       bottom: 45%;
       left: 45%;
@@ -136,12 +187,32 @@ menu li:nth-child(2) {
     }
   }
 
-menu li:nth-child(3) {
+.menu--top .menu__item:nth-child(2) {
+  margin-left: auto;
+}
+
+.menu--top .menu__item:nth-child(2) .menu__link {
+  color: red;
+  text-decoration: none;
+  border: 1px solid red;
+}
+
+.menu--top .menu__item:nth-child(3) {
+  margin-left: 1rem;
+}
+
+.menu--top .menu__item:nth-child(3) .menu__link {
+  color: green;
+  text-decoration: none;
+  border: 1px solid green;
+}
+
+.menu--center .menu__item:nth-child(3) {
   border-color: green;
   color: green;
 }
   @media only screen and (min-width: 375px) {
-    menu li:nth-child(3) {
+    .menu--center .menu__item:nth-child(3) {
       top: 12%;
       bottom: 22%;
       left: 40%;
@@ -149,10 +220,51 @@ menu li:nth-child(3) {
     }
   }
   @media only screen and (min-width: 768px) {
-    menu li:nth-child(3) {
+    .menu--center .menu__item:nth-child(3) {
       top: 47%;
       bottom: 17%;
       left: 30%;
       right: 20%;
     }
   }
+
+.menu--center .menu__item:nth-child(4) {
+  display: none;
+}
+
+.menu--top .menu__item:nth-child(4) {
+  margin-left: 1rem;
+  display: none;
+}
+  @media only screen and (min-width: 768px) {
+    .menu--top .menu__item:nth-child(4) {
+      display: block;
+    }
+  }
+
+.menu--top .menu__item:nth-child(4) .menu__link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid blue;
+  color: blue;
+  text-decoration: none;
+}
+
+.main {
+  margin-top: 3rem;
+  max-width: 75ch;
+}
+
+.main img {
+  display: block;
+  max-width: 100%;
+}
+
+.main img:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.main p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
