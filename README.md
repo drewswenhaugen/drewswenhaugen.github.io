@@ -29,3 +29,16 @@ npm install nodemon -g
 ```
 nodemon server.js
 ```
+
+# Push Changes to Repo
+
+```
+git status
+```
+
+Read the list of files and make sure youre not adding something weird.
+
+```
+git commit -am "<What your commit has done>"
+git push origin main
+```
