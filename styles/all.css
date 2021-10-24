@@ -53,7 +53,8 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
 /* 
  * THESE ARE THE SITE STYLES 
  *
@@ -271,6 +272,7 @@ html {
 }
 .main p strong {
   font-weight: 500;
+  color: darkblue;
 }
 
 .main figure img:not(:last-child){
@@ -278,7 +280,24 @@ html {
 }
 
 .main figure figcaption {
-  font-size: 0.875rem; 
-  font-family: 'Akronim';
-  font-family: 'Akronim', cursive;
+  font-size: 0.850rem; 
+  font-family:'Electrolize', sans-serif;
+  color: red;
+}
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
 }
