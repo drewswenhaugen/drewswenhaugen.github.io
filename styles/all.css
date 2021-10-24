@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
 /* 
  * RESET 
  *
@@ -52,9 +55,6 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
-
 /* 
  * THESE ARE THE SITE STYLES 
  *
@@ -63,7 +63,7 @@ table {
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Padauk', sans-serif;
+  font-family: 'Padauk', serif;
 }
 
 .container {
