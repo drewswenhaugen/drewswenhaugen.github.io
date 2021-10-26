@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 
 /* 
  * RESET 
@@ -281,7 +281,7 @@ html {
 
 .main figure figcaption {
   font-size: 0.850rem; 
-  font-family:'Electrolize', sans-serif;
+  font-family: 'Zen Antique Soft', serif;
   color: red;
 }
 div.scrollmenu {
