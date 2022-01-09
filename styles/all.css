@@ -276,10 +276,11 @@ html {
 }
 
 .main figure figcaption {
-  font-size: 0.875rem; 
-  font-family: 'Padauk', sans-serif;
+  font-size: 16px; 
+  font-family: 'Padauk', serif;
   color: red;
 }
+
 div.scrollmenu {
   background-color: #333;
   overflow: auto;
