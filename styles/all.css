@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+
 /* 
  * RESET 
  *
@@ -53,9 +56,6 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
-
 /* 
  * THESE ARE THE SITE STYLES 
  *
@@ -64,7 +64,7 @@ table {
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Padauk', sans-serif;
+  font-family: 'Padauk', serif;
 }
 
 .container {
@@ -281,17 +281,15 @@ html {
 }
 
 .main figure figcaption {
-  font-size: 0.875 rem; 
-  font-family: 'Padauk', serif;
+  font-size: 0.850rem; 
+  font-family: 'Zen Antique Soft', serif;
   color: red;
 }
-
 div.scrollmenu {
   background-color: #333;
   overflow: auto;
   white-space: nowrap;
 }
-
 div.scrollmenu a {
   display: inline-block;
   color: white;
