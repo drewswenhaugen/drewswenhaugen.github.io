@@ -126,11 +126,6 @@ html {
       padding: 0.5rem 3rem;
     }
   }
-
-.menu__link::after {
-  content: ' —';
-}
-
 .menu--top .menu__item:first-child .menu__link::after,
 .menu--top .menu__item:last-child .menu__link::after 
 {
